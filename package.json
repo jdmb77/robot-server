@@ -1,0 +1,34 @@
+{
+  "name": "robot-server",
+  "version": "1.0.0",
+  "description": "Node.js server for Robot communication",
+  "main": "app.js",
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jdmb77/robot-server.git"
+  },
+  "keywords": [
+    "Robot Server",
+    "UGV",
+    "UAV",
+    "USV",
+    "UXV"
+  ],
+  "author": "GHirsch 20160611",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jdmb77/robot-server/issues"
+  },
+  "homepage": "https://github.com/jdmb77/robot-server#readme",
+  "dependencies": {
+    "body-parser": "1.15.1",
+    "debug": "2.2.0",
+    "ejs": "2.4.1",
+    "express": "4.13.4",
+    "mongoose": "4.4.16",
+    "morgan": "1.7.0"
+  }
+}
