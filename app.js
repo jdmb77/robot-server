@@ -9,14 +9,14 @@ var	index = require('./routes/index'),
 	robots = require('./routes/robots');
 
 //--------------Database Connect-------------o~<')))>{
-/*var mongoose = require('mongoose');
-mongoose.connect('mongodb://192.168.1.75/robotsvr', function(err) {
+var mongoose = require('mongoose');
+mongoose.connect('mongodb://192.168.1.75/robot-test-svr', function(err) {
     if(err) {
         console.log('Database connection error', err);
     } else {
         console.log('Database connection successful');
     }
-});*/
+});
 
 //---------------Configurations--------------o~<')))>{
 app.set('view engine', 'ejs');
