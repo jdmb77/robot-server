@@ -12,10 +12,10 @@ var RobotSchema = new mongoose.Schema({
 	battery : Number,
 	force_dir : Number,
 	force_speed : Number,
-	goals : [{
+	goals : {
 		lat : Number,
 		lon : Number
-	}]
+	}
 });
 
 module.exports = mongoose.model('Robot', RobotSchema);
