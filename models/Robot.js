@@ -1,6 +1,7 @@
 var mongoose = require('mongoose');
 
 var RobotSchema = new mongoose.Schema({
+	rid: Number,
 	ip : String,
 	type : String,
 	status : String,
@@ -12,10 +13,11 @@ var RobotSchema = new mongoose.Schema({
 	battery : Number,
 	force_dir : Number,
 	force_speed : Number,
-	goals : {
+	goals : [{
 		lat : Number,
 		lon : Number
-	}
+	}],
+	updated: { type: Date, default: Date.now }
 });
 
 module.exports = mongoose.model('Robot', RobotSchema);
